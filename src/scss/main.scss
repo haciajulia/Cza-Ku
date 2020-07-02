@@ -37,7 +37,7 @@ body {
   margin-right: 50px;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
   
 }}
@@ -47,34 +47,61 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: content-box;
 &__image {
   width: 100%;
   position: relative;
 
 }}
 
-.title {
+.main-title {
     position: absolute;
     top: 100px;
     z-index: 2;
     font-family: 'Miss Fajardose', cursive;
     color: $mybrown;
     font-size: 150px;
-    font-weight: 400;
+    font-weight: lighter;
     margin: 0;
 &__sub {
+  z-index: 1;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   color: $mywhite;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  top: 230px;
+  top: 255px;
+  margin-left: 40px;
 }}
+
+.main {
+  display: flex;
+}
 
 .button {
   background-color: transparent;
   border: none;
   position: relative;
-  
+  top: -75px;
 }
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Miss Fajardose', cursive;
+  color: $mybrown;
+  font-size: 120px;
+  font-weight: lighter;
+  margin:0;
+&__sub {
+font-family: 'Quicksand', sans-serif;
+font-size: 25px;
+color: $myblack;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+}}
